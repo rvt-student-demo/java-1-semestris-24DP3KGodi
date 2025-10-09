@@ -2,7 +2,7 @@ package rvt;
 
 import java.util.Scanner;
 
-public class MansUzdevums {
+public class Sum_of_a_sequence {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,6 +15,8 @@ public class MansUzdevums {
             sum += 1;
         }
         System.out.println("The sum is " + sum);
+
+        scanner.close();
     }
 }
 
