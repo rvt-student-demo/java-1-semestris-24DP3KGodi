@@ -15,7 +15,11 @@ public class MansUzdevums {
             sum += 1;
         }
         System.out.println("The sum is " + sum);
+
+        scanner.close();
     }
 }
+
+
 
     
