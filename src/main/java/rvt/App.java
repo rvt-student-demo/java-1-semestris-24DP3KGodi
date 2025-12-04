@@ -30,5 +30,6 @@ public class App {
             System.out.println("Sum:" + allStatistics.sum());
             System.out.println("Sum of even numbers:" + evenNumbers.sum());
             System.out.println("Sum of odd numbers:" + oddNumbers.sum());
+        scanner.close();
         }
     }  
