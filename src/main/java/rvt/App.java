@@ -1,15 +1,34 @@
 package rvt;
+import java.util.Scanner;
+
 
 public class App {
-    public static void main (String[] args) {
+        public static void main(String[] args) {
 
-        Student student1 = new Student("Janis",  20);
-        System.out.println(student1.name);
+            Scanner scanner = new Scanner(System.in);
 
-        Student student2 = new Student("Anna", 16);
-        System.out.println(student2.name);
+            Statistics allStatistics = new Statistics();
+            Statistics evenNumbers = new Statistics();
+            Statistics oddNumbers = new Statistics();
 
-        Student student3 = new Student("Maija", 19);
-        System.out.println(student2.name);
-    }
-}
+            System.out.println("Enter numbers:");
+
+            while (true) {
+                int num = Integer.parseInt(scanner.nextLine());
+
+                if (num == -1) {
+                    break;
+                }
+                allStatistics.addNumber(num);
+                if (num % 2 == 0) {
+                    evenNumbers.addNumber(num);
+                } else {
+                    oddNumbers.addNumber(num);
+                }  
+            }
+
+            System.out.println("Sum:" + allStatistics.sum());
+            System.out.println("Sum of even numbers:" + evenNumbers.sum());
+            System.out.println("Sum of odd numbers:" + oddNumbers.sum());
+        }
+    }  

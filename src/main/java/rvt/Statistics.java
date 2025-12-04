@@ -25,6 +25,8 @@ public class Statistics {
     }
 
 
+public static void main(String[] args) {
+
 Scanner scanner = new Scanner(System.in);
 
 Statistics allStatistics = new Statistics();
