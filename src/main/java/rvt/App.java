@@ -1,25 +1,15 @@
 package rvt;
 
-import java.util.Scanner;
-
 public class App {
-    public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    public static void main (String[] args) {
 
-    int num = 0;
+        Student student1 = new Student("Janis",  20);
+        System.out.println(student1.name);
 
-    while (true) {
-        System.out.println("Give a number: ");
-        num = scanner.nextInt();
+        Student student2 = new Student("Anna", 16);
+        System.out.println(student2.name);
 
-        if (num == 4) {
-            System.out.println(num);
-            break;
-        }
-        System.out.println(num);
+        Student student3 = new Student("Maija", 19);
+        System.out.println(student2.name);
     }
-
-    scanner.close();
-    }
-
-}         
+}
